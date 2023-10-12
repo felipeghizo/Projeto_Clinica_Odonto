@@ -1,0 +1,731 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Úteis */
+.clear{clear: both;}
+.container{
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+/* Section Header 1 */
+section.header-master{
+    width: 100%;
+    padding: 40px 0;
+    min-height: 750px;
+    background-image: url("../images/bg_01.png");
+    background-size: cover;
+}
+/* Header */
+Header{
+    border-bottom: 3px solid rgba(71, 83, 88, 0.15);
+    padding-bottom: 20px;
+}
+/* Header logo */
+header img{
+    float: left;
+    max-width: 100%;
+}
+/* Header menu */
+header nav.desktop{
+    float: left;
+    padding-left: 45px;
+}
+header nav.desktop ul{
+    list-style-type: none;
+}
+header nav.desktop ul li{
+    display: inline-block;
+    font-size: 18px;
+    padding: 0 15px;
+    color: white;
+}
+header nav.desktop ul li.selected{
+    color: #509d87;
+    position: relative;
+}
+header nav.desktop ul li.selected > span{
+    background-color: #509d87;
+    width: 15px;
+    height: 3px;
+    position: absolute;
+    bottom: -3px;
+}
+header nav.desktop ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+/* Header nav mobile */
+header nav.mobile{
+    display: none;
+    float: right;
+    margin-right: 10px;
+
+}
+header nav.mobile h3{
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+}
+header nav.mobile ul{
+    background-color: #6cc5b2;
+    width: 100%;
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    top: 125px;
+    display: none;
+}
+header nav.mobile ul li{
+    padding: 10px 5px;
+    width: 100%;
+    text-align: center; 
+    border-bottom: 1px solid white;   
+}
+header nav.mobile a{
+    color: white;
+    text-decoration: none;
+}
+header nav.mobile li:hover{
+    background-color: #569b8c;
+}
+
+/* Header Fone */
+header div.header-fone{
+    float: right;
+    position: relative;
+    top: -5px;
+} 
+header div.header-fone span{
+    font-size: 25px;
+    color: white;
+} 
+/* Section Header 2 */
+section.header-master div.header-content{
+    padding: 50px 0;
+}
+/* Section Header 2 Article */
+section.header-master article{
+    float: left;
+    width: 50%;
+}
+/* Section Header 2 Article text */
+section.header-master article h2{
+    color: #509d87;
+    font-weight: normal;
+    font-size: 37px;
+}
+section.header-master article p{
+    padding-top: 10px;
+    text-indent: 15px;
+}
+section.header-master article span{
+    display: inline-block;
+    padding-top: 10px;
+    color: #509d87;
+}
+/* Section Header 2 Article form */
+section.header-master article form{
+    padding-top: 20px;
+}
+/* Section Header 2 Article form input*/
+section.header-master article form input{
+    display: inline-block;
+}
+/* Section Header 2 Article form input email*/
+section.header-master article form input[type=email]{
+    width: 40%;
+    height: 50px;
+    border: 2px solid rgb(155, 155, 155);
+    border-radius: 25px;
+    padding-left: 20px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+/* Section Header 2 Article form input submit*/
+section.header-master article form input[type=submit]{
+    background-color: #00daaa;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px 30px;
+    margin: 10px 0;
+    height: 50px;
+    width: 60%;
+    border-radius: 30px;
+    font-size: 17px;
+}
+section.header-master article form input[type=submit]:hover{
+    background-color: #01b68f;
+}
+
+/* Section Header 2 Aside */
+section.header-master aside{
+    float: left;
+    width: 50%;
+}
+/* Section Header 2 Aside img */
+section.header-master aside img{
+    height: 220px;
+    width: 220px;
+    border: 10px solid rgba(0,0,0,0);
+}
+
+/* Section diferenciais */
+section.diferenciais{
+    padding: 0px 0;
+}
+section.diferenciais > div.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+section.diferenciais div.diferencial-single{
+    width: 33%;
+    margin-bottom: 50px;
+}
+/* Alinhando box -- imagens possuem diferentes dimenções */
+section.diferenciais div.diferencial-single:nth-of-type(1) img{
+    margin-bottom: 10px;
+}
+section.diferenciais div.diferencial-single:nth-of-type(2) img{
+    margin-bottom: 14px;
+}
+section.diferenciais div.diferencial-single:nth-of-type(4) img{
+    margin-bottom: 17px;
+}
+section.diferenciais div.diferencial-single:nth-of-type(6) img{
+    margin-bottom: 8px;
+}
+
+section.diferenciais div.diferencial-single h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+section.diferenciais div.diferencial-single span{
+    color: #7dd5b0;
+}
+section.diferenciais div.diferencial-single p{
+    text-indent: 15px;
+    color: #2d2d2d;
+    font-size: 14px;   
+}
+
+
+
+/* Section sobre */
+section.sobre > div.container{
+    max-width: 1440px;
+    position: relative;
+    z-index: 2;
+}
+section.sobre div.sobre-imagem{
+    float: left;
+    width: 50%;
+}
+section.sobre div.sobre-imagem img{
+    max-width: 100%;
+    position: relative;
+    top: 30px;
+}
+section.sobre div.sobre-texto{
+    float: left;
+    width: 50%;
+    padding: 20px 0 0 20px;
+}
+/* Section Sobre Textos */
+section.sobre div.sobre-texto h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #a9b4c8;
+    font-weight: normal;
+}
+section.sobre div.sobre-texto p{
+    font-size: 15px;
+    margin-bottom: 20px;
+    max-width: 70%;
+}
+section.sobre div.sobre-texto span{
+    color: #03ca9f;
+    font-weight: bold;
+}
+
+/* Section Depoimento */
+section.depoimento{
+    position: relative;
+    top: -50px;
+    z-index: 3;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    background-image: url("../images/bg_02.png");
+    background-size: cover;
+    text-align: center;
+    color: #2d2d2d;
+}
+section.depoimento > div.container{
+    max-width: 850px;
+    padding: 0 5%;
+}
+section.depoimento i{
+    float: left;
+    color: #61a186;
+    font-size: 40px;
+    width: 2%;
+}
+/* Section depoimento Textos */
+section.depoimento h2{
+    float: left;
+    padding: 0 5%;
+    width: 90%;
+    font-size: 29px;
+    font-weight: normal;
+}
+section.depoimento p{
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+/* Section etapas */
+section.etapas{
+    padding: 40px 0;
+}
+section.etapas > div.container{
+    max-width: 1200px;
+}
+/* Sections etapas textos */
+section.etapas h2{
+    text-align: center;
+    color: #3b3e42;
+}
+section.etapas h2 span{
+    color: #919aa5;
+}
+/* Section etapas single */
+section.etapas div.etapas__single{
+    float: left;
+    width: 50%;
+}
+    section.etapas div.etapas__single div.etapas__group{
+        margin-top: 50px;
+    }
+/* Section etapas single texto*/
+section.etapas div.etapas__single div.etapas__group p{
+    float: left;
+    color: #509d87;
+    padding: 130px 0px 0px 50px;
+    width: 200px;
+}
+/* Section etapas single img*/
+section.etapas div.etapas__single div.etapas__group img{
+    float: left;
+    max-width: 100%;
+}
+section.etapas div.etapas__single div.etapas__group:nth-of-type(1) img{
+    width: 50%;
+}
+section.etapas div.etapas__single div.img_peq1 img{
+    float: right;
+}
+section.etapas div.etapas__single div.img_peq2 img{
+    float: left;
+}
+section.etapas div.etapas__single div.img_peq1 img,
+section.etapas div.etapas__single div.img_peq2 img{
+    max-width: 201px;
+}
+/* Section etapas single group2*/
+section.etapas div.etapas__single div.etapas__group2{
+    margin-bottom: 40px;
+}
+section.etapas div.etapas__single div.etapas__group2 p{
+    max-height: 40px;
+}
+section.etapas div.etapas__single div.etapas__group2 div.circle{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    position: relative;
+}
+section.etapas div.etapas__single div.etapas__group2 div.circle div.line{
+    position: absolute;
+    top: 99px;
+    left: 50%;
+    height: 40px;
+    width: 1px;
+    background: #ccc;
+    transform: translate(-50%, 0);
+}
+section.etapas div.etapas__single div.etapas__group2 div.etapas__descricao{
+    float: left;
+    width: calc(100% - 100px);
+    padding: 0 20px;
+}
+/* Section etapas single group2 texto*/
+section.etapas div.etapas__single div.etapas__group2 div.circle span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+section.etapas div.etapas__single div.etapas__group2 div.etapas__descricao h3{ 
+    color: #03ca9f;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+section.etapas div.etapas__single div.etapas__group2 div.etapas__descricao p{ 
+    color: #2d2d2d;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Section Diferencas*/
+section.diferencas{
+    text-align: center;
+    padding: 50px 0;
+}
+section.diferencas > div.container{
+    max-width: 700px;
+}
+section.diferencas div.diferencas__single{
+    float: left;
+    width: 50%;
+} 
+section.diferencas div.diferencas__single:nth-of-type(1){
+    border-right: 2px solid rgb(214, 214, 214);
+}
+section.diferencas div.item-diferencas-1{
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+}
+section.diferencas div.item-diferencas-2{
+    margin-top: 10px;
+}
+section.diferencas div.diferencas__single:nth-of-type(2) img{
+    max-width: 100%;
+}
+section.diferencas div.item-diferencas-1 div.line-diferencas{
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 100%;
+    height: 2px;
+    background-color: #e89595;
+    z-index: 1;
+    transform: rotate(-2deg);
+}
+section.diferencas div.diferencas__single h2{
+    color: #8ba198;
+    font-weight: normal;
+    font-size: 30px;
+}
+section.diferencas div.item-diferencas-1 span{
+    color: #a9c4b8;
+    font-weight: bold;
+    font-size: 20px;
+}
+section.diferencas div.item-diferencas-2 span{
+    color: #7dd5b0;
+    font-size: 20px;
+}
+section.diferencas div.item-diferencas-2 span b{
+    color: #5c9b81;
+}
+
+/* Section contato */
+section.contato{
+    padding: 20px 0;
+    background-color: #98fcde;
+}
+section.contato > div.container{
+    max-width: 50%;
+    margin: 0 auto;
+   
+}
+section.contato h2{
+    color: #509d87;
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+section.contato p{
+    color: #509d87;
+}
+section.contato form{
+    padding: 20px 0;
+}
+section.contato form input{
+    width: 80%;
+    height: 40px;
+    padding-left: 15px;
+    margin-top: 5px;
+    border-radius: 20px;
+    border: 1px solid #646464;
+}
+section.contato form input:focus{
+    outline: 0;
+} 
+section.contato form textarea{
+    width: 80%;
+    height: 100px;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #646464;
+    resize: none;
+}
+section.contato form div.form-group input[type=submit]{
+    width: 100%; 
+    height: 40px;
+    background-color: #0ed2a7;
+    border-radius: 100px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+section.contato form div.form-group input[type=submit]:hover{
+    background-color: #1d9c81;
+}
+
+/* Footer */
+footer{
+    background-color: #6cc5b2;
+    text-align: center;
+    padding: 20px 0;
+}
+footer img{
+    max-width: 90%;
+}
+
+/* Media query */
+/* notebook */
+@media screen and (max-width: 1024px){
+    /* Section Header 2 Aside img */
+    section.header-master aside img{
+        height: 45%;
+        width: 45%;
+    }
+
+    /* Section depoimento */
+    section.depoimento{
+        top: 0;
+    }
+
+    /* Section etapas */
+    section.etapas div.etapas__single{
+        width: 90%;
+        margin: 0 5%;
+    }
+    section.etapas > .container{
+        max-width: 700px;
+    }
+    section.etapas div.etapas__single div.etapas__group p{
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0 0 0;
+    }
+    section.etapas div.etapas__single div.etapas__group img{
+        float: none;
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    section.etapas div.etapas__single div.etapas__group:nth-of-type(1) img{
+        max-width: 100%;
+        margin: 0 auto;
+        width: auto;
+    }
+
+    /* Section etapas */
+    section.etapas div.etapas__single div.etapas__group{
+        float: left;
+        max-width: 45%;
+        width: 480px;
+    }
+    /* Section etapas imgs */
+    section.etapas div.etapas__single div.img_grd{
+        padding-left: 15%;
+        padding-top: 100px;
+    }
+    section.etapas div.etapas__single div.img_peq1 img,
+    section.etapas div.etapas__single div.img_peq2 img{
+        max-width: 201px;
+    }
+}
+
+@media screen and (max-width: 944px){
+    /* Menu mobile */
+    section.header-master div.header-fone{
+        display: none;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px){
+    /* Section Header */
+    section.header-master{
+        min-height: 600px;
+    }
+    header nav.desktop{
+        display: none;
+    }
+    header nav.mobile{
+        display: block;
+    }
+    section.header-master aside{
+        display: none;
+    }
+    section.header-master article{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Section diferenciais */
+    section.diferenciais div.diferencial-single{
+        width: 100%;
+        padding: 0 5%;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    /* Section depoimento */
+    section.depoimento{
+        top: 0;
+    }
+
+    /* Section sobre */
+    section.sobre{
+        text-align: center;
+    }
+    section.sobre div.sobre-imagem{
+        width: 100%;
+        float: none;
+    }
+    section.sobre div.sobre-texto{
+        margin-top: 40px;
+        width: 100%;
+        float: none;
+    }
+    section.sobre div.sobre-texto p{ 
+        max-width: 100%;
+    }
+
+    /* Section etapas */
+    section.etapas {
+        padding-bottom: 0;
+    }
+    section.etapas div.etapas__single{
+        text-align: center;
+    }
+    /* Section etapas imgs*/
+    section.etapas div.etapas__single div.img_grd{
+        float: none;
+        margin: 20px auto;
+        padding: 0;
+        width: 100%;
+    }
+    section.etapas div.etapas__single div.img_peq1,
+    section.etapas div.etapas__single div.img_peq2{
+        float: left;
+        margin: 20px 0;
+        width: 50%;
+        
+    }
+    section.etapas div.etapas__single div.img_peq1 img,
+    section.etapas div.etapas__single div.img_peq2 img{
+        margin-left: 25%;
+        width: 90%;
+    }
+
+    /* Section Diferencas */
+    section.diferencas{
+        padding: 0;
+    }
+    section.diferencas div.diferencas__single:nth-of-type(1){
+        border-right: none;
+        border-bottom: 2px solid rgb(214, 214, 214);
+        padding-bottom: 20px;
+    }
+    section.diferencas div.diferencas__single{
+        float: none;
+        width: 60%;
+        margin: 10px auto
+    }
+}
+
+/* Celular */
+@media screen and (max-width: 480px){
+    /* Section etapas */
+    section.etapas div.etapas__single div.etapas__group2{
+        display: none;
+    }
+    /* Section Header 2 Article h2*/
+    section.header-master article h2{
+        font-size: 26px;
+    }
+    /* Section Header 2 Article form input email*/
+    section.header-master article form input[type=email]{
+        padding-left: 10px;
+        font-size: 12px;
+    }
+    /* Section Header 2 Article form input submit*/
+    section.header-master article form input[type=submit]{
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    /* Section diferenciais */
+    section.diferenciais div.diferencial-single h2{
+        font-size: 20px;
+    }
+
+    /* Section sobre */
+    section.sobre div.sobre-texto h2{
+        font-size: 20px;
+    }
+
+    /* Section Depoimento */
+    section.depoimento > div.container {
+        text-align: center;
+    }
+    section.depoimento div.container h2{
+        padding: 0;
+        margin: 0 6%;
+    }
+    section.depoimento i{
+        display: none;
+    }
+
+    /* Section diferencas Texto */
+    section.diferencas div.diferencas__single h2{
+        font-size: 20px;
+    }
+    section.diferencas div.item-diferencas-1 span{
+        font-size: 18px;
+    }
+    section.diferencas div.item-diferencas-2 span{
+        font-size: 18px;
+    }
+
+    /* Section contato */
+    section.contato p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 229px){
+    /* Menu mobile */
+    header nav.mobile ul{
+        top: 164px;
+    }
+}
